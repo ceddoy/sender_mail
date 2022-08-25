@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if not user.is_anonymous %}
+        <input type="button" onclick="location.href={% url 'call_error' %};" value="Call exception" />
+    {% endif %}
+{% endblock %}

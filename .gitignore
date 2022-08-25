@@ -1,0 +1,12 @@
+**/__pycache__/
+.env
+receiver/.env
+receiver/.idea
+receiver/venv
+
+sender_mail/.env
+sender_mail/.idea
+sender_mail/venv
+
+data
+sender_mail/celerybeat-schedule

@@ -1,0 +1,22 @@
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <h1 class="mt-2">Sender Service</h1>
+          <hr class="mt-0 mb-4">
+            {% if user.is_verify %}
+                <h3>Поздравляем!</h3>
+                <br>
+                <h4>Пользователь {{ user.email }} подтвержден.</h4>
+            {% else %}
+                <h3>Верификация не пройдена. </h3>
+                <br>
+                <h4>Истекло действие активационного ключа.</h4>
+                <h4>Зарегистрируйтесь заново.</h4>
+            {% endif %}
+            <br>
+            <button class="btn btn-round form-control">
+                <a href="{% url 'index' %}" class="">на сайт</a>
+            </button>
+        </div>
+      </div>
+</div>
